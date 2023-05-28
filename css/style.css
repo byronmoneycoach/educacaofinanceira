@@ -9,7 +9,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("/img/ondas5.png");
+  background-image: url("../img/ondas5.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
