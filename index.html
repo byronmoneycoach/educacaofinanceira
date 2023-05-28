@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamificação CREFISA</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <script>
+    function ativarbotao() {
+      window.location.href = "#";
+      setTimeout(function () {
+        alert("Este site foi criado com o intuito de demonstração, trata-se de um protótipo para gamificação de educação financeira para a empresa CREFISA");
+      }, 500);
+    }
+  </script>
 </head>
 
 <body>
@@ -18,6 +29,7 @@
   <div class="gamification-section">
 
     <div class="content">
+      <h1>Byron MoneyCoach</h1>
       <p>Com o objetivo de introduzir educação financeira ao site da CREFISA, este é um protótipo de produto que, utilizando-se métodos de gamificação, busca proporcionar uma experiência inovadora, dinâmica e interativa para os clientes que desejam aprender sobre educação financeira. O mascote Byron, já criado anteriormente pela Crefisa, será um dos pontos destaques para a parte criativa do projeto. Os clientes Crefisa poderão acompanhar o Byron em um conteúdo estruturado com diversas etapas de conhecimento sobre educação financeira e também aprender sobre tópicos e dicas antifraude.</p>
       <div class="mascote">
         <img src="./img/byronimg2.png" alt="Byron Mascote">
@@ -51,7 +63,7 @@
       <h3>Competições e Rankings</h3>
       <p>Participe de competições e veja sua posição no ranking para ganhar prêmios especiais.</p>
 
-      <a href="#" class="botao">Jogar Agora!</a>
+      <a class="botao" onclick="ativarbotao()">Jogar Agora!</a>
 
       <div id="placar">
         <h2>Placar de Líderes</h2>
