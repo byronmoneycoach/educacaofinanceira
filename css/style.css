@@ -60,68 +60,35 @@ h2 {
   color: #f9a825;
 }
 
-.game-card {
+.content:nth-child(n + 2) {
   display: inline-block;
   width: 500px;
   padding: 100px;
-  margin: 20px;
-  background-color: #0d89c3;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
-.game-card h3 {
+.content:nth-child(n + 2) h3 {
   font-size: 2rem;
   color: #fff;
   text-decoration: underline;
 }
 
-.game-card p {
+.content:nth-child(n + 2) p {
   font-size: 1.5rem;
   color: #fff;
 }
 
-.game-card img {
+.content:nth-child(n + 2) img {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
 }
 
-.game-card2 {
-  display: inline-block;
-  width: 500px;
-  padding: 100px;
-  margin: 20px;
-  background-color: #0d89c3;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.game-card2 h3 {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.game-card2 p {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.game-card2 img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
+.content:last-child {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {
-  .game-card,
-  .game-card2 {
-    width: 100%;
-    height: auto;
-    padding: 50px;
-    box-sizing: border-box;
-  }
   .achievement {
     margin-top: 15px;
     box-sizing: border-box;
