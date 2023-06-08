@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Gamificação CREFISA</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="capa">
+    <img src="./img/logooficial3.svg" alt="Fundo">
+  </div>
+
+  <div class="gamification-section">
+
+    <div class="introducao">
+      <h1>Byron MoneyCoach</h1>
+      <p>Com o objetivo de introduzir educação financeira ao site da CREFISA, este é um protótipo de produto que, utilizando-se métodos de gamificação, busca proporcionar uma experiência inovadora, dinâmica e interativa para os clientes que desejam aprender sobre educação financeira. O mascote Byron, já criado anteriormente pela Crefisa, será um dos pontos destaques para a parte criativa do projeto. Os clientes Crefisa poderão acompanhar o Byron em um conteúdo estruturado com diversas etapas de conhecimento sobre educação financeira e também aprender sobre tópicos e dicas antifraude.</p>
+      <div class="mascote">
+        <img src="./img/byronimg2.png" alt="Byron Mascote">
+      </div>
+    </div>
+    <div class="container">
+
+      <h2>Programa de Recompensas</h2>
+      <div class="content">
+        <img class="referencia" src="./img/recompensa3.jpg" alt="Ícone de Recompensas">
+        <h3>Programa de Recompensas</h3>
+        <p>Ganhe pontos a cada transação e troque por prêmios e descontos exclusivos.</p>
+        <div class="reward">
+          <div class="header">
+            <p class="points">Pontos: <span id="points">0</span></p>
+          </div>
+          <h2>Prêmios</h2>
+          <div class="premios">
+            <input type="radio" name="premio" value="calendario" id="calendario">
+            <label for="calendario">Calendário <span>50 pontos</span></label>
+            <img class="referencia" src="./img/calendario2.png" alt="Calendario Azul">
+
+            <input type="radio" name="premio" value="bone" id="bone">
+            <label for="bone">Boné <span>100 pontos</span></label>
+            <img class="referencia" src="./img/bone.png" alt="Bone crefisa">
+
+            <input type="radio" name="premio" value="desconto" id="desconto">
+            <label for="desconto">30 % de Desconto <span>200 pontos</span></label>
+            <img class="referencia" src="./img/desconto.png" alt="desconto">
+          </div>
+          <button id="redeemPointsButton" class="botao">Trocar Pontos</button>
+        </div>
+      </div>
+
+      <h2>Desafios Financeiros</h2>
+      <div class="content">
+        <img class="referencia" src="./img/desafios3.png" alt="Ícone de Desafios">
+        <h3>Desafios Financeiros</h3>
+        <p>Participe de desafios de economia e receba recompensas por atingir metas financeiras.</p>
+        <div class="challenge">
+          <div class="header">
+            <p class="points">Pontos: <span id="pontos">0</span></p>
+          </div>
+
+          <div id="challengeContainer" style="display: none;">
+            <h4 class="desafio" id="challengeTitle"></h4>
+            <p id="challengeDescription"></p>
+          </div>
+          <button class="botao" id="economyChallengeButton" onclick="showRandomEconomyChallenge()">Próximo Desafio</button>
+        </div>
+      </div>
+
+      <h2 id="jogos">Educação Financeira Interativa</h2>
+      <div class="content">
+        <img class="referencia" src="./img/educacao.png" alt="Ícone de Educação">
+        <h3>Educação Financeira Interativa</h3>
+        <p>Aprenda sobre finanças jogando e ganhe benefícios ao atingir objetivos educacionais.</p>
+        <div class="education">
+          <p>Abaixo está sua barra de progresso, comece a jogar agora mesmo para atualiza-la.</p>
+          <div class="progress">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <div class="header">
+            <p class="points">Pontos: <span id="pontos-2">0</span></p>
+          </div>
+
+          <button id="educationButton" class="botao">Jogar</button>
+          <div id="quizContainer" class="quiz" style="display: none;">
+            <h4 class="desafio">Quiz de Educação Financeira</h4>
+            <div id="questionImageContainer"></div>
+            <ul id="answers" class="answers"></ul>
+            <button class="botao" onclick="nextQuestion()">Próxima Pergunta</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Competições e Rankings</h2>
+      <div class="content">
+        <img class="referencia" src="./img/competicoes.png" alt="Ícone de Competições">
+        <h3>Competições e Rankings</h3>
+        <p>Participe de competições e veja sua posição no ranking para ganhar prêmios especiais.</p>
+
+        <a class="botao" onclick="ativarbotao()">Jogar Agora!</a>
+
+        <div id="placar">
+          <h2>Placar de Líderes</h2>
+          <ul>
+            <li>
+              <img src="./img/primeiro.png" alt="primeiro lugar">
+              <span> João - 500 pontos</span>
+            </li>
+            <li>
+              <img src="./img/segundo.png" alt="primeiro lugar">
+              <span> Maria - 400 pontos</span>
+            </li>
+            <li>
+              <img src="./img/terceiro.png" alt="primeiro lugar">
+              <span>Pedro - 350 pontos</span>
+            </li>
+            <li>
+              <span>4.</span>
+              <p>Ana - 300 pontos</p>
+            </li>
+            <li>
+              <span>5.</span>
+              <p>Lucas - 250 pontos</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="achievements">
+          <h2>Conquistas</h2>
+          <div class="achievement">
+            <img class="referencia" src="./img/TrophyIcon.png" alt="Trophy Icon">
+            <p>Mantenha-se em primeiro lugar por 2 semanas seguidas. </p>
+          </div>
+          <div class="achievement">
+            <img class="referencia" src="./img/MedalIcon.png" alt="Medal Icon">
+            <p>Fique em primeiro lugar do Ranking ao menos 1 vez.</p>
+          </div>
+          <div class="achievement">
+            <img class="referencia" src="./img/StarIcon.png" alt="Star Icon">
+            <p>Complete o nível 1 do quiz de educação financeira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p> *LAYOUT PARA PROVA DE CONCEITO - NÃO RETRATA PRODUTO FINAL*</p>
+    </footer>
+    <script src="./JS/jogaragora.js"></script>
+</body>
+
+</html>
