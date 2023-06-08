@@ -1,0 +1,32 @@
+.capa {
+  padding-bottom: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("/img/ondas5.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .capa img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    background-image: none;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 500px) {
+  .capa {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .capa {
+    padding-bottom: 200px;
+  }
+}
