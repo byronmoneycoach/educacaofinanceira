@@ -29,9 +29,6 @@ h1 {
 
 @media (max-width: 600px) {
   .introducao {
-    display:flex;
-    justify-content:center;
-    align-items: center;
     width: 100%;
     height: auto;
     background-image: none;
@@ -39,9 +36,6 @@ h1 {
     box-sizing: border-box;
   }
   .content {
-    display:flex
-    justify-content:center;
-    align-items: center;
     width: 100%;
     height: auto;
     background-image: none;
@@ -49,9 +43,30 @@ h1 {
     box-sizing: border-box;
   }
   .content.premios {
-    display:flex
-    justify-content:center;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: none;
+    padding: 70px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .introducao {
+    width: 100%;
+    height: auto;
+    background-image: none;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    background-image: none;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .content.premios {
     width: 100%;
     height: auto;
     background-image: none;
