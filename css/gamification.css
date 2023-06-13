@@ -40,6 +40,8 @@ h1 {
   }
   .content {
     display:flex
+    justify-content:center;
+    align-items: center;
     width: 100%;
     height: auto;
     background-image: none;
@@ -48,6 +50,8 @@ h1 {
   }
   .content.premios {
     display:flex
+    justify-content:center;
+    align-items: center;
     width: 100%;
     height: auto;
     background-image: none;
