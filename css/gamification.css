@@ -35,6 +35,20 @@ h1 {
     padding: 50px;
     box-sizing: border-box;
   }
+  .content {
+    width: 100%;
+    height: auto;
+    background-image: none;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .content.premios {
+    width: 100%;
+    height: auto;
+    background-image: none;
+    padding: 70px;
+    box-sizing: border-box;
+  }
 }
 
 .mascote {
