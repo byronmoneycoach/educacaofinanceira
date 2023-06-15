@@ -28,6 +28,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  h1{
+    font-size: 3rem;
+    text-align: center;
+  }
   .introducao {
     width: 100%;
     height: auto;
@@ -48,6 +52,21 @@ h1 {
     background-image: none;
     padding: 70px;
     box-sizing: border-box;
+  }
+  .premios{
+    padding: 3.75rem 0.938rem !important;
+  }
+  .achievement {
+    margin-top: 15px;
+    box-sizing: border-box;
+    margin-right: 0px !important;
+  }
+  #placar li:nth-child(n + 4) span {
+    padding-left: 0.75rem !important;
+  }
+  
+  #placar li:nth-child(n + 4) p {
+    padding-left: 0.625rem !important;
   }
 }
 
@@ -110,13 +129,6 @@ h2 {
 
 .content:last-child {
   margin-bottom: 40px;
-}
-
-@media (max-width: 600px) {
-  .achievement {
-    margin-top: 15px;
-    box-sizing: border-box;
-  }
 }
 
 #placar {
